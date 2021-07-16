@@ -30,7 +30,12 @@ function slot () {
        
 
         // Condicionais de vitória 
-        if ((final_esquerda == final_meio) || (final_esquerda == final_direita) || (final_meio == final_direita)){
+
+        if((final_esquerda == final_meio) && (final_esquerda == final_direita)){
+            document.getElementById("all").innerHTML = "Parabéns!!! Você ACERTOU TRÊS!!"
+        }
+        
+        else if ((final_esquerda == final_meio) || (final_esquerda == final_direita) || (final_meio == final_direita)){
             document.getElementById("all").innerHTML = "Quase lá! Você ACERTOU DOIS!!"
         }
 
