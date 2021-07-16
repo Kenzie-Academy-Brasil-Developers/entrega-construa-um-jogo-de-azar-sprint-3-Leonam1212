@@ -35,11 +35,13 @@ body::before{
     display: block;
     width: 100%;
     height: 100%;
-    filter: blur(3px);
+    filter: blur(5px);
 }
 
 header{
   
+  
+  width: 100%;
   
 
 }
@@ -55,14 +57,13 @@ header::before{
     width: 100%;
     height: 100px;
     filter: blur(25px);
-    background-color: rgb(238, 226, 226);
+    background-color: rgba(44, 43, 43, 0.445);
   
 
 }
 
 header h1 {
- 
-
+    max-width: 100%;
     padding: 30px;
     font-size:26px;
     text-align: center;
@@ -166,7 +167,7 @@ header h1 {
 
 
 
-@media only screen and (min-width:768px) {
+@media only screen and (min-height:356px) and (min-width:768px) {
 
 
     body {
@@ -196,15 +197,16 @@ header h1 {
             filter: blur(3px);
         }
 
-   
         header h1 {
- 
-            width: 100%;
+            position: fixed;
+            max-width: 100%;
+            /* background-color: rgba(0, 0, 0, 0.288); */
             padding: 30px;
             font-size:26px;
             text-align: center;
             color: rgb(247, 103, 103);
-        }     
+        }
+
     header h1::before{
        
         content: "";
@@ -216,7 +218,7 @@ header h1 {
         display: block;
         width: 100%;
         height: 100px;
-       filter: blur(0px);
+
         background-color: rgba(0, 0, 0, 0.582);
       
     
